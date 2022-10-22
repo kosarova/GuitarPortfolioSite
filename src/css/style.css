@@ -365,14 +365,32 @@ table {
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "MonserratT";
+  src: url("../fonts/Montserrat-Regular.ttf");
+  font-weight: regular;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MonserratT";
+  src: url("../fonts/Montserrat-SemiBold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+html {
+  font-family: "MonserratT";
+  font-weight: regular;
+}
+
 .container {
+  position: relative;
   max-width: 1140px;
   margin: 0 auto;
 }
 
 .main-section {
   position: relative;
-  height: 800px;
+  min-height: 800px;
   background: #F0F0F0;
   padding-top: 16px;
   overflow: hidden;
@@ -395,7 +413,7 @@ table {
 .main-section__first-elipse {
   position: absolute;
   top: 129px;
-  right: 34px;
+  right: 80px;
 }
 .main-section__second-elipse {
   position: absolute;
@@ -410,9 +428,14 @@ table {
 .nav-menu__list-item {
   margin-right: 64px;
   font-size: 18px;
+  font-weight: bold;
 }
 .nav-menu__list-item:last-child {
   margin-right: 0px;
+}
+.nav-menu__list-item a {
+  color: black;
+  text-decoration: none;
 }
 
 .left-wrapper {
@@ -501,6 +524,7 @@ table {
 .title {
   font-size: 72px;
   position: relative;
+  font-weight: bold;
 }
 .title__hr {
   width: 65px;
@@ -509,6 +533,9 @@ table {
   margin: 0;
   border: none;
   border-top: 1px solid black;
+}
+.title__hr_top {
+  bottom: 75px;
 }
 
 .buttons {
@@ -523,6 +550,7 @@ table {
   border-radius: 100px;
   border: none;
   font-size: 18px;
+  font-weight: bold;
   color: white;
 }
 .buttons__icon-btn {
@@ -558,4 +586,152 @@ table {
 .elipse__subtract_big {
   width: 188px;
   height: 188px;
+}
+
+.second-section {
+  min-height: 700px;
+}
+.second-section__container {
+  padding-top: 32px;
+  position: relative;
+}
+.second-section__title {
+  margin-bottom: 40px;
+}
+.second-section__cards-box {
+  display: inline-flex;
+  margin-bottom: 25px;
+}
+.second-section__cards-item {
+  margin-right: 30px;
+}
+.second-section__cards-item:last-child {
+  margin-right: 0;
+}
+.second-section__icons-box {
+  display: flex;
+  justify-content: space-evenly;
+}
+.second-section__icons-item:last-child {
+  margin-right: 0;
+}
+.second-section__first-elipse {
+  position: absolute;
+  top: 80px;
+  right: -60px;
+  z-index: -1;
+}
+.second-section__second-elipse {
+  position: absolute;
+  top: 364px;
+  left: -60px;
+  z-index: -1;
+}
+
+.cards-item {
+  position: relative;
+  width: 360px;
+  height: 360px;
+  background: #E2E2E2;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+}
+.cards-item__img {
+  height: 335px;
+}
+.cards-item__text {
+  width: 280px;
+  font-size: 36px;
+  text-align: center;
+  transform: rotate(90deg);
+  position: absolute;
+  font-weight: bold;
+  top: 144px;
+  right: -45px;
+}
+
+.cards-item_orange {
+  background: #F28B64;
+}
+
+.cards-item_blue {
+  background: #5290EA;
+}
+
+.icons-item {
+  display: inline-flex;
+  align-items: center;
+}
+.icons-item__img {
+  margin-right: 20px;
+  width: 80px;
+}
+.icons-item__text {
+  font-size: 18px;
+}
+.icons-item__text span {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.third-section {
+  background: #F0F0F0;
+  min-height: 640px;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+.third-section__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 167px;
+  padding-top: 46px;
+}
+.third-section__right-side {
+  max-width: 480px;
+}
+.third-section__right-title {
+  margin-bottom: 20px;
+}
+.third-section__text {
+  font-size: 18px;
+  line-height: 21.94px;
+  margin-bottom: 30px;
+}
+.third-section__first-elipse {
+  position: absolute;
+  top: 140px;
+  left: 110px;
+  z-index: -1;
+}
+.third-section__substruct {
+  position: absolute;
+  top: 249px;
+  left: 15px;
+  z-index: -1;
+}
+.third-section__second-elipse {
+  position: absolute;
+  right: -120px;
+  top: -120px;
+}
+
+.footer {
+  position: relative;
+}
+.footer__container {
+  min-height: 272px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.footer__img {
+  position: absolute;
+  left: -250px;
+  bottom: 0px;
+}
+.footer__title {
+  margin-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */
